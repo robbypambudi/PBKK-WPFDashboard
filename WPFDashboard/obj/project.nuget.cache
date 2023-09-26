@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mx5Zjm9i15r+1BT8Xk51D4BSKLBQN1v/e7kDBotJ8k61xR668JOgLg0XdlqgoiQ7IDOUcv7Yv/JpQHP3RGFJ5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RobbyPambudi\\Documents\\MyMatkul\\PBKK\\Tugas-4-WPFDashboard\\WPFDashboard\\WPFDashboard\\WPFDashboard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RobbyPambudi\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\RobbyPambudi\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\RobbyPambudi\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,130 @@
+﻿<Window x:Class="WPFDashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDashboard"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="WPFDashboard" Height="600" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="1" Background="#FFE4E4E4">
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Height="120" Margin="20" Fill="White" RadiusY="11" RadiusX="11" />
+
+                    <Grid Margin="25" Height="120">
+                        <Grid Width="35" Height="50" Background="#FF4B49AC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 0">
+                            <Grid.Effect>
+                                <DropShadowEffect Color="#FFE6E4E4"/>
+                            </Grid.Effect>
+                            <materialDesign:PackIcon Kind="ContentCopy" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White" Margin="5" Height="25" Width="20"/>
+                        </Grid>
+                    </Grid>
+                
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBDBCE2" Offset="1"/>
+                    <GradientStop Color="#FFE4E4E4" Offset="0.06"/>
+                    <GradientStop Color="#FFBDBCE2" Offset="0.705"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect RenderingBias="Quality" Color="#FF98BDFF" Opacity="0.45" BlurRadius="8" />
+            </Grid.Effect>
+
+            <Grid Background="#FF7978E9">
+                <TextBlock Text="DASHBOARD" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Courier New" FontWeight="Bold" FontSize="18" />
+            </Grid>
+
+            <StackPanel Grid.Row="1">
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="ViewDashboard" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Dashboard" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Profile" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="ContentPaste" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Table" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="TshirtCrew" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Product" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="TruckDelivery" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Delivery" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="ContentPaste" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Prof" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                    <Grid Width="150">
+                        <materialDesign:PackIcon Kind="Settings" VerticalAlignment="Center" />
+                        <TextBlock HorizontalAlignment="Center" Text="Configurations" FontFamily="Courier New" />
+                    </Grid>
+                </Button>
+
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.ColumnSpan="2" Background="#FF4B49AC" x:Name="GridMenu" MouseDown="GridMenu_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Background="{x:Null}" Margin="10,0">
+                <Button  Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Yellow" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Bell" />
+                </Button>
+                <Button  Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Green" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                    <materialDesign:PackIcon Kind="Account" />
+                </Button>
+                <Button x:Name="buttonExit" Click="buttonExit_Click" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Red">
+                    <materialDesign:PackIcon Kind="Power" />
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
