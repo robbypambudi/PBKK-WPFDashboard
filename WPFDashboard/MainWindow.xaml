@@ -32,28 +32,87 @@
                         <ColumnDefinition Width="1*" />
                     </Grid.ColumnDefinitions>
                     <Rectangle Height="120" Margin="20" Fill="White" RadiusY="11" RadiusX="11" />
-
                     <Grid Margin="25" Height="120">
-                        <Grid Width="35" Height="50" Background="#FF4B49AC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20 0">
-                            <Grid.Effect>
-                                <DropShadowEffect Color="#FFE6E4E4"/>
-                            </Grid.Effect>
-                            <materialDesign:PackIcon Kind="ContentCopy" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="White" Margin="5" Height="25" Width="20"/>
+                        <Grid.RowDefinitions Width="40">
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Row="0" VerticalAlignment="Center">
+                            <TextBlock Text="Total Revenue" Margin="10 0" FontFamily="Cambria" FontSize="18" FontWeight="Bold" />
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Rp. 24.120.94" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="24"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Up 33%" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Septem" FontFamily="Cambria" FontSize="16"/>
                         </Grid>
                     </Grid>
-                
+                    <Rectangle Height="120" Margin="20" Fill="White" RadiusY="11" RadiusX="11" Grid.Column="1"/>
+                    <Grid Margin="25" Height="120" Grid.Column="1">
+                        <Grid.RowDefinitions Width="40">
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Row="0" VerticalAlignment="Center">
+                            <TextBlock Text="Items Sold" Margin="10,0,10,0" FontFamily="Cambria" FontSize="18" FontWeight="Bold" />
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="275 Items" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="24"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Up 33%" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Septem" FontFamily="Cambria" FontSize="16"/>
+                        </Grid>
+                    </Grid>
+                    
+                    <Rectangle Height="120" Margin="20" Fill="White" RadiusY="11" RadiusX="11" Grid.Column="2"/>
+                    <Grid Margin="25" Height="120" Grid.Column="2">
+                        <Grid.RowDefinitions Width="40">
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="3*"/>
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Row="0" VerticalAlignment="Center">
+                            <TextBlock Text="Total Visitor" Margin="10,0,10,0" FontFamily="Cambria" FontSize="18" FontWeight="Bold" />
+                        </Grid>
+                        <Grid Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="2782 Users" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="24"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Up 33%" Foreground="#FF3CB906" FontFamily="Cambria" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10 0" >
+                            <TextBlock Text="Septem" FontFamily="Cambria" FontSize="16"/>
+                        </Grid>
+                    </Grid>
+
                 </Grid>
             </ScrollViewer>
         </Grid>
 
-        <Grid Grid.Row="1">
-            <Grid.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFBDBCE2" Offset="1"/>
-                    <GradientStop Color="#FFE4E4E4" Offset="0.06"/>
-                    <GradientStop Color="#FFBDBCE2" Offset="0.705"/>
-                </LinearGradientBrush>
-            </Grid.Background>
+        <Grid Grid.Row="1" Background="#FFF3F0F0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*" />
@@ -63,7 +122,10 @@
             </Grid.Effect>
 
             <Grid Background="#FF7978E9">
-                <TextBlock Text="DASHBOARD" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Courier New" FontWeight="Bold" FontSize="18" />
+                <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Connect X" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontWeight="Bold" FontSize="18" />
+                    <TextBlock Text="Connecting Possibilities, Empowering Solutions" HorizontalAlignment="Center" FontFamily="Comic Sans MS" FontSize="12" Height="37" TextWrapping="Wrap" Width="175" TextAlignment="Center" />
+                </StackPanel>
             </Grid>
 
             <StackPanel Grid.Row="1">
@@ -73,7 +135,7 @@
                         <TextBlock HorizontalAlignment="Center" Text="Dashboard" FontFamily="Courier New" />
                     </Grid>
                 </Button>
-                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
+                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF" Click="Button_Click">
                     <Grid Width="150">
                         <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" />
                         <TextBlock HorizontalAlignment="Center" Text="Profile" FontFamily="Courier New" />
@@ -85,31 +147,6 @@
                         <TextBlock HorizontalAlignment="Center" Text="Table" FontFamily="Courier New" />
                     </Grid>
                 </Button>
-                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="TshirtCrew" VerticalAlignment="Center" />
-                        <TextBlock HorizontalAlignment="Center" Text="Product" FontFamily="Courier New" />
-                    </Grid>
-                </Button>
-                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="TruckDelivery" VerticalAlignment="Center" />
-                        <TextBlock HorizontalAlignment="Center" Text="Delivery" FontFamily="Courier New" />
-                    </Grid>
-                </Button>
-                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="ContentPaste" VerticalAlignment="Center" />
-                        <TextBlock HorizontalAlignment="Center" Text="Prof" FontFamily="Courier New" />
-                    </Grid>
-                </Button>
-                <Button Margin="10" Background="#FF7DA0FA" BorderBrush="#FF98BDFF">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="Settings" VerticalAlignment="Center" />
-                        <TextBlock HorizontalAlignment="Center" Text="Configurations" FontFamily="Courier New" />
-                    </Grid>
-                </Button>
-
             </StackPanel>
         </Grid>
 
